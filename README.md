@@ -15,4 +15,4 @@ Beer Trade serve como um hub para troca entre cervejeiros com feeds e avaliação 
 <img alt="tela 4 da aplicação" width="30%" src="https://s3.invisionapp-cdn.com/storage.invisionapp.com/screens/thumbnails/252534369.png?x-amz-meta-iv=1&response-cache-control=max-age%3D2419200&x-amz-meta-mdi=7&x-amz-meta-ck=f22c363a84aeb55f1c6003cafb836739&AWSAccessKeyId=AKIAJFUMDU3L6GTLUDYA&Expires=1559347200&Signature=bGeRxST5L8JRQ1cexqn%2FsgYYrhk%3D" /><img alt="tela 5 da aplicação" width="30%" src="https://s3.invisionapp-cdn.com/storage.invisionapp.com/screens/thumbnails/252534370.png?x-amz-meta-iv=1&response-cache-control=max-age%3D2419200&x-amz-meta-mdi=7&x-amz-meta-ck=f22c363a84aeb55f1c6003cafb836739&AWSAccessKeyId=AKIAJFUMDU3L6GTLUDYA&Expires=1559347200&Signature=ClYkRudEQLllox%2BPgZ%2FNXAb2SLk%3D" />
 
 ## Licenças
-[Arquivo de licença](LICENSE.rd)
+[Arquivo de licença](LICENSE)

@@ -15,4 +15,4 @@ Beer Trade is like a trade hub for breweries, with feeds and rank of production.
 <img alt="app screen 4" width="30%" src="https://s3.invisionapp-cdn.com/storage.invisionapp.com/screens/thumbnails/252534369.png?x-amz-meta-iv=1&response-cache-control=max-age%3D2419200&x-amz-meta-mdi=7&x-amz-meta-ck=f22c363a84aeb55f1c6003cafb836739&AWSAccessKeyId=AKIAJFUMDU3L6GTLUDYA&Expires=1559347200&Signature=bGeRxST5L8JRQ1cexqn%2FsgYYrhk%3D" /><img alt="app screen 5" width="30%" src="https://s3.invisionapp-cdn.com/storage.invisionapp.com/screens/thumbnails/252534370.png?x-amz-meta-iv=1&response-cache-control=max-age%3D2419200&x-amz-meta-mdi=7&x-amz-meta-ck=f22c363a84aeb55f1c6003cafb836739&AWSAccessKeyId=AKIAJFUMDU3L6GTLUDYA&Expires=1559347200&Signature=ClYkRudEQLllox%2BPgZ%2FNXAb2SLk%3D" />
 
 ## Licenses
-[License file](LICENSE.rd)
+[License file](LICENSE)
