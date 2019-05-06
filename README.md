@@ -9,7 +9,6 @@ Beer Trade serve como um hub para troca entre cervejeiros com feeds e avaliaçã
 |------------------------------------------------------------------------------|-----------------------------------|------------------------------|
 |Criar repositório, projeto e configurar CI no App Center para Android         |https://youtu.be/U4zJuHJxJjY       |	  [Ver documentação](docs/1-AndroidCI.md)    |
 |Configurar CI no App Center para iOS com [Fastlane](https://github.com/fastlane/fastlane)|https://youtu.be/GkIpqHC6pr0       |	                      |
-|Criar repositório, projeto e configurar CI no App Center para Android         |https://youtu.be/U4zJuHJxJjY       |	      |
 |Falando sobre testes                                                          |https://youtu.be/06Jxu5OHPPk       |          |
 
 # Status de build
