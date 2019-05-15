@@ -1,5 +1,4 @@
-﻿using System;
-using Prism.Navigation;
+﻿using Prism.Navigation;
 
 namespace BeerTrade.ViewModels
 {
