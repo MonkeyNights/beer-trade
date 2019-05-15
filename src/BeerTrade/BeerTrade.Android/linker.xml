@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<linker>
+    <assembly fullname="DryIoc">
+        <type fullname="DryIoc.CurrentScopeReuse*" />
+        <type fullname="DryIoc.Registrator*" />
+        <type fullname="DryIoc.IResolver*" />
+        <type fullname="DryIoc.Resolver*" />
+        <type fullname="DryIoc.ResolutionScopeName*" />
+        <type fullname="DryIoc.Request*">
+            <method name="Push" />
+        </type>
+    </assembly>
+    <assembly fullname="Prism">
+        <type fullname="Prism.Logging.EmptyLogger">
+            <method name=".ctor" />
+        </type>
+        <type fullname="Prism.Modularity.IModuleCatalog*" />
+    </assembly>
+    <assembly fullname="Prism.Forms">
+        <type fullname="Prism.Modularity.ModuleCatalog*" />
+    </assembly>
+    <assembly fullname="BeerTrade">
+        <type fullname="BeerTrade.Views.*Page">
+            <method name=".ctor" />
+        </type>
+        <type fullname="BeerTrade.ViewModels.*PageViewModel">
+            <method name=".ctor" />
+        </type>
+    </assembly>
+</linker>

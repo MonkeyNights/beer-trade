@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabbedPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:BeerTrade.Views;assembly=BeerTrade"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    prism:ViewModelLocator.AutowireViewModel="True"
+    x:Class="BeerTrade.Views.MainPage">
+    <views:FeedPage />
+    <views:BeersPage />
+    <views:TradesPage />
+    <views:ProfilePage />
+</TabbedPage>
