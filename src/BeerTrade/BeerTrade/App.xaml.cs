@@ -1,16 +1,36 @@
-﻿using System;
+﻿using System.Threading.Tasks;
+using BeerTrade.ViewModels;
+using BeerTrade.Views;
+using Prism;
+using Prism.DryIoc;
+using Prism.Ioc;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace BeerTrade
 {
-    public partial class App : Application
+    public partial class App : PrismApplication
     {
-        public App()
+        public App() : this(null) { }
+
+        public App(IPlatformInitializer platformInitializer) : base(platformInitializer) { }
+
+        protected override async void OnInitialized()
         {
             InitializeComponent();
+            await InitializeNavigation();
+        }
 
-            MainPage = new MainPage();
+        private Task InitializeNavigation()
+            => NavigationService.NavigateAsync("MainPage");
+
+        protected override void RegisterTypes(IContainerRegistry containerRegistry)
+        {
+            containerRegistry.RegisterForNavigation<NavigationPage>();
+            containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<FeedPage, FeedPageViewModel>();
+            containerRegistry.RegisterForNavigation<BeersPage, BeersPageViewModel>();
+            containerRegistry.RegisterForNavigation<TradesPage, TradesPageViewModel>();
+            containerRegistry.RegisterForNavigation<ProfilePage, ProfilePageViewModel>();
         }
 
         protected override void OnStart()
