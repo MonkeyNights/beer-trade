@@ -13,6 +13,7 @@ Beer Trade serve como um hub para troca entre cervejeiros com feeds e avaliaçã
 
 # Status de build
 - Android: [![Build status](https://build.appcenter.ms/v0.1/apps/1f81f5fb-c5ab-4d55-aa80-573fe060d6cc/branches/master/badge)](https://appcenter.ms)
+- iOS: [![Build status](https://build.appcenter.ms/v0.1/apps/3884c1b0-97b3-42f9-998d-cda75152757b/branches/master/badge)](https://appcenter.ms)
 
 ## Imagens
 - [Visualização no Invision](https://projects.invisionapp.com/share/QJDEO20ZR#/screens)
