@@ -26,5 +26,12 @@
         <type fullname="BeerTrade.ViewModels.*PageViewModel">
             <method name=".ctor" />
         </type>
+        <type fullname="BeerTrade.Services.*">
+            <method name=".ctor" />
+        </type>
+        <type fullname="BeerTrade.Models.*">
+            <method name=".ctor" />
+        </type>
+        <type fullname="BeerTrade.Interfaces.*" />
     </assembly>
 </linker>

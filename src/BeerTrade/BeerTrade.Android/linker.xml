@@ -27,4 +27,11 @@
             <method name=".ctor" />
         </type>
     </assembly>
+    <type fullname="BeerTrade.Services.*">
+        <method name=".ctor" />
+    </type>
+    <type fullname="BeerTrade.Models.*">
+        <method name=".ctor" />
+    </type>
+    <type fullname="BeerTrade.Interfaces.*" />
 </linker>
