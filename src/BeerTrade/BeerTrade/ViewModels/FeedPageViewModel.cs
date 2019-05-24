@@ -36,7 +36,8 @@ namespace BeerTrade.ViewModels
         {
             IsActiveChanged?.Invoke(this, EventArgs.Empty);
 
-            await GetFeed();
+            if (IsActive)
+                await GetFeed();
         }
 
         private async Task GetFeed()
