@@ -13,14 +13,22 @@
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <LangVersion>latest</LangVersion>
+    <DebugType></DebugType>
+    <DefineConstants>TRACE;RELEASE;NETSTANDARD;NETSTANDARD2_0;DISABLE_XAMARINFORMSLIVE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Prism.DryIoc.Forms" Version="7.1.0.431" />
     <PackageReference Include="Xamarin.Forms" Version="4.0.0.394984-pre10" />
+    <PackageReference Include="LiveXAML" Version="2.1.72" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Transformations" Version="2.4.11.982" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
     <Folder Include="ViewModels\" />
     <Folder Include="ViewModels\Base\" />
+    <Folder Include="Models\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 </Project>

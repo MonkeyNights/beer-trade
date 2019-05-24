@@ -1,4 +1,6 @@
 ﻿using System.Threading.Tasks;
+using BeerTrade.Interfaces;
+using BeerTrade.Services;
 using BeerTrade.ViewModels;
 using BeerTrade.Views;
 using Prism;
@@ -31,6 +33,7 @@ namespace BeerTrade
             containerRegistry.RegisterForNavigation<BeersPage, BeersPageViewModel>();
             containerRegistry.RegisterForNavigation<TradesPage, TradesPageViewModel>();
             containerRegistry.RegisterForNavigation<ProfilePage, ProfilePageViewModel>();
+            containerRegistry.RegisterSingleton<IApi, ApiServiceFake>();
         }
 
         protected override void OnStart()

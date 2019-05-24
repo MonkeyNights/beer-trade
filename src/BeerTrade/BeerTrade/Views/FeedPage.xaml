@@ -4,9 +4,83 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
     prism:ViewModelLocator.AutowireViewModel="True"
+    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
     x:Class="BeerTrade.Views.FeedPage"
     Title="Home">
     <ContentPage.Content>
-       
+        <ListView 
+            ItemsSource="{Binding Items}"
+            HasUnevenRows="true"
+            SeparatorVisibility="None"
+        >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <Frame
+                                HeightRequest="270"
+                                Margin="20,10"
+                                Padding="0"
+                            >
+                                <Grid
+                                    RowSpacing="0"
+                                >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="180" />
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    
+                                    <Image 
+                                        Grid.Row="0"
+                                        Source="{Binding BeerPhoto}"
+                                        Aspect="AspectFill"
+                                    />
+                                    
+                                    <Grid
+                                        Grid.Row="1"
+                                        ColumnSpacing="15"
+                                        Margin="20"
+                                    >
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="50" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        
+                                        <ffimageloading:CachedImage 
+                                            Grid.Column="0"
+                                            Source="{Binding AvatarPhoto}"
+                                            HeightRequest="50"
+                                            WidthRequest="50"
+                                        >
+                                            <ffimageloading:CachedImage.Transformations>
+                                                <fftransformations:CircleTransformation/>
+                                            </ffimageloading:CachedImage.Transformations>
+                                        </ffimageloading:CachedImage>
+                                        
+                                        <StackLayout
+                                            Grid.Column="1"
+                                            VerticalOptions="Center"
+                                            Spacing="0"
+                                        >
+                                            <Label 
+                                                Text="{Binding Nickname}"
+                                                FontAttributes="Bold"
+                                                TextColor="Black"
+                                            />
+                                            
+                                            <Label 
+                                                Text="{Binding Location}"
+                                                TextColor="Gray"
+                                            />
+                                        </StackLayout>
+                                    </Grid>
+                                </Grid>
+                            </Frame>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </ContentPage.Content>
 </ContentPage>
