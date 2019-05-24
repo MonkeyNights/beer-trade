@@ -332,3 +332,7 @@ ASALocalRun/
 \.DS_Store
 
 key/
+
+# Android
+src/BeerTrade/BeerTrade.Android/Resources/Resource.designer.cs
+
