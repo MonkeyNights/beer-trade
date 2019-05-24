@@ -13,6 +13,8 @@
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <LangVersion>latest</LangVersion>
+    <DebugType></DebugType>
+    <DefineConstants>TRACE;RELEASE;NETSTANDARD;NETSTANDARD2_0;DISABLE_XAMARINFORMSLIVE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Prism.DryIoc.Forms" Version="7.1.0.431" />
